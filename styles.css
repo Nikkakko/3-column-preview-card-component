@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* ### Neutral */
+
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /*(paragraphs) */
+  --very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+
+/* CONSTANTS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--very-light-gray);
+}
+
+h1 {
+  font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.875rem;
+  color: var(--very-light-gray);
+  margin-bottom: 20px;
+}
+p {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparent-white);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.btn {
+  background-color: var(--very-light-gray);
+  border-radius: 30px;
+  border: 2px solid var(--very-light-gray);
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.card {
+  padding: 30px;
+}
+
+.container {
+  padding: 30px;
+}
+
+/* BACKGROUND COLORS */
+
+.color1 {
+  background-color: var(--bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+
+.color2 {
+  background-color: var(--dark-cyan);
+}
+.color3 {
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+.color1 .btn {
+  color: var(--bright-orange);
+}
+.color2 .btn {
+  color: var(--dark-cyan);
+}
+.color3 .btn {
+  color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* MAIN */
+
+.card img {
+  margin-bottom: 25px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+  }
+  .color1 {
+    border-radius: 10px 0 0 10px;
+  }
+  .color3 {
+    border-radius: 0 10px 10px 0;
+  }
+  .card p {
+    margin-bottom: 100px;
+  }
+}
